@@ -402,7 +402,7 @@ local function toggleVisualRange(state)
     VisualRangeBtn.TextColor3 = Config.VisualRangeEnabled and C_GREEN or C_TEXT
     if Config.VisualRangeEnabled then
         if not VisualPart then
-            VisualPart = Instance.new("Part"); VisualPart.Name = "FarmRangeVisual"; VisualPart.Shape = Enum.PartType.Cylinder; VisualPart.Color = Color3.fromRGB(0, 119, 255); VisualPart.Transparency = 0.85; VisualPart.Material = Enum.Material.Neon; VisualPart.Anchored = true; VisualPart.CanCollide = false; VisualPart.CastShadow = false; VisualPart.Parent = workspace
+            VisualPart = Instance.new("Part"); VisualPart.Name = "FarmRangeVisual"; VisualPart.Shape = Enum.PartType.Cylinder; VisualPart.Color = Color3.fromRGB(125, 0, 255); VisualPart.Transparency = 0.85; VisualPart.Material = Enum.Material.Neon; VisualPart.Anchored = true; VisualPart.CanCollide = false; VisualPart.CastShadow = false; VisualPart.Parent = workspace
         end
         if VisualConnection then VisualConnection:Disconnect() end
         VisualConnection = RunService.RenderStepped:Connect(function()
